@@ -36,6 +36,8 @@ toggleComplete(index) {
 //add delete method
 
 deleteTodo(index) {
+  this.state.todos.splice(index, 1);
+  this.setState({todos: this.state.todos});
 
 }
 
